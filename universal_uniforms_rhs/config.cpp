@@ -19,7 +19,7 @@ class CfgPatches {
 	class universal_uniforms_rhs {
 		units[]= {};
 		weapons[]= {};
-		requiredVersion = 2.02;
+		requiredVersion = 2.16;
 		requiredAddons[]= {
 			"universal_uniforms",
 			"rhs_c_troops",
@@ -80,6 +80,10 @@ class CfgVehicles {
 	};
 
 	class rhs_msv_arifleman : rhs_msv_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_msv_arifleman_rpk : rhs_msv_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -203,27 +207,11 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_msv_emr_rifleman_patchless : rhs_msv_emr_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_msv_mflora_rifleman_patchless : rhs_msv_emr_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_msv_rifleman_patchless : rhs_msv_emr_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_msv_rifleman_patchless_alt : rhs_msv_emr_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_msv_rifleman_m88_patchless : rhs_msv_emr_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
 	class rhs_msv_emr_arifleman : rhs_msv_arifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_msv_emr_arifleman_rpk : rhs_msv_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -307,43 +295,27 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_rifleman : rhs_msv_rifleman {
+	class rhs_msv_emr_rifleman_patchless : rhs_msv_emr_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_rifleman_asval : rhs_mvd_izlom_rifleman {
+	class rhs_vdv_emr_patchless : rhs_msv_emr_rifleman_patchless {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_rifleman_LAT : rhs_mvd_izlom_rifleman {
+	class rhs_msv_mflora_rifleman_patchless : rhs_msv_emr_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_grenadier_rpg : rhs_mvd_izlom_rifleman {
+	class rhs_msv_rifleman_patchless : rhs_msv_emr_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_arifleman : rhs_mvd_izlom_rifleman {
+	class rhs_msv_rifleman_patchless_alt : rhs_msv_emr_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
-	class rhs_mvd_izlom_machinegunner : rhs_mvd_izlom_arifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_mvd_izlom_marksman : rhs_mvd_izlom_rifleman {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_mvd_izlom_marksman_vss : rhs_mvd_izlom_rifleman_asval {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_mvd_izlom_efreitor : rhs_mvd_izlom_rifleman_LAT {
-		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
-	};
-
-	class rhs_mvd_izlom_sergeant : rhs_mvd_izlom_rifleman {
+	class rhs_msv_rifleman_m88_patchless : rhs_msv_emr_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -384,6 +356,10 @@ class CfgVehicles {
 	};
 
 	class rhs_vdv_arifleman : rhs_vdv_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vdv_arifleman_rpk : rhs_vdv_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -507,6 +483,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhs_vdv_des_arifleman_rpk : rhs_vdv_arifleman_rpk {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhs_vdv_des_machinegunner : rhs_vdv_machinegunner {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -599,6 +579,14 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhs_vdv_gorka_r_y_gloves_rifleman : rhs_vdv_gorka_r_y_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vdv_gorka_r_g_gloves_rifleman : rhs_vdv_gorka_r_g_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhs_vdv_gorka_1_a_rifleman : rhs_vdv_gorka_r_y_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -624,6 +612,10 @@ class CfgVehicles {
 	};
 
 	class rhs_vdv_flora_grenadier_rpg : rhs_vdv_grenadier_rpg {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vdv_flora_arifleman_rpk : rhs_vdv_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -724,6 +716,10 @@ class CfgVehicles {
 	};
 
 	class rhs_vdv_mflora_grenadier_rpg : rhs_vdv_grenadier_rpg {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vdv_mflora_arifleman_rpk : rhs_vdv_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -843,6 +839,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhs_vdv_recon_arifleman_rpk : rhs_vdv_recon_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhs_vdv_recon_efreitor : rhs_vdv_recon_rifleman_lat {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -891,6 +891,158 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhs_vdv_recon_arifleman_rpk_scout : rhs_vdv_recon_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_rifleman : rhs_infantry_vdv_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_rifleman_asval : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_rifleman_LAT : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_grenadier_rpg : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_arifleman : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_arifleman_rpk : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_machinegunner : rhs_mvd_izlom_arifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_marksman : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_marksman_vss : rhs_mvd_izlom_rifleman_asval {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_efreitor : rhs_mvd_izlom_rifleman_LAT {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_mvd_izlom_sergeant : rhs_mvd_izlom_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_rifleman : rhs_vdv_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_rifleman_lite : rhs_vmf_emr_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_efreitor : rhs_vdv_efreitor {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_grenadier : rhs_vdv_grenadier {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_grenadier_rpg : rhs_vdv_grenadier_rpg {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_arifleman_rpk : rhs_vdv_arifleman_rpk {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_machinegunner : rhs_vdv_machinegunner {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_machinegunner_assistant : rhs_vdv_machinegunner_assistant {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_at : rhs_vdv_at {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_aa : rhs_vdv_aa {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_strelok_rpg_assist : rhs_vdv_strelok_rpg_assist {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_marksman : rhs_vdv_marksman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_officer_armored : rhs_vdv_officer_armored {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_officer : rhs_vdv_officer {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_sergeant : rhs_vdv_sergeant {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_junior_sergeant : rhs_vdv_junior_sergeant {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_engineer : rhs_vdv_engineer {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_driver_armored : rhs_vdv_driver_armored {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_driver : rhs_vdv_driver {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_medic : rhs_vdv_medic {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_LAT : rhs_vdv_LAT {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_RShG2 : rhs_vdv_RShG2 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_crew : rhs_vdv_crew {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_crew_commander : rhs_vdv_crew_commander {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_armoredcrew : rhs_vdv_armoredcrew {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_emr_combatcrew : rhs_vdv_combatcrew {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhs_vmf_flora_rifleman : rhs_vdv_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -912,6 +1064,10 @@ class CfgVehicles {
 	};
 
 	class rhs_vmf_flora_grenadier_rpg : rhs_vdv_grenadier_rpg {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vmf_flora_arifleman_rpk : rhs_vdv_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -1091,6 +1247,242 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhs_afghanka_base : rhs_infantry_msv_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_ttsko_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_ttsko_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_ttsko_2_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_ttsko_2_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_klmk_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_klmk_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_spetsodezhda_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_spetsodezhda_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_grey_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_grey_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_wdl_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_wdl_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_moldovan_ttsko_cold_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_moldovan_ttsko_cold_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_moldovan_ttsko_hot_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_moldovan_ttsko_hot_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_moldovan_ttsko_desat_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_moldovan_ttsko_desat_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_moldovan_ttsko_blue_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_moldovan_ttsko_blue_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_vsr_1_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_vsr_1_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_vsr_2_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_vsr_2_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_vsr_3_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_boots_vsr_3_base : rhs_afghanka_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_ttsko_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_ttsko_base : rhs_afghanka_winter_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_vsr_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_vsr_base : rhs_afghanka_winter_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_vsr_2_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_vsr_2_base : rhs_afghanka_winter_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_vsr_3_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_vsr_3_base : rhs_afghanka_winter_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_moldovan_ttsko_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_moldovan_ttsko_base : rhs_afghanka_winter_boots_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_spetsodezhda_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_winter_boots_spetsodezhda_base : rhs_afghanka_winter_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_para_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_para_ttsko_base : rhs_afghanka_para_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_para_ttsko_2_base : rhs_afghanka_para_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_para_vsr_base : rhs_afghanka_para_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_afghanka_para_vsr_2_base : rhs_afghanka_para_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_omon_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_cossack_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_klmk_oversuit_base : rhs_afghanka_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vkpo_base : rhs_infantry_msv_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vkpo_alt_base : rhs_vkpo_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vkpo_gloves_base : rhs_vkpo_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_vkpo_gloves_alt_base : rhs_vkpo_alt_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_6sh122_base : rhs_vkpo_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_6sh122_v1_base : rhs_6sh122_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_6sh122_v2_base : rhs_6sh122_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_6sh122_gloves_v1_base : rhs_6sh122_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhs_6sh122_gloves_v2_base : rhs_6sh122_gloves_v1_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsusf_socom_uniform_base : SoldierWB {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -1120,6 +1512,10 @@ class CfgVehicles {
 	};
 
 	class rhsusf_army_acu_uniform : rhsusf_socom_uniform_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsusf_army_acu2_uniform : rhsusf_army_acu_uniform {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -2299,6 +2695,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsusf_airforce_security_force_rifleman : rhsusf_infantry_army_base {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhs_ins_base : I_G_Soldier_F {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -2499,6 +2899,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_cdf_reg_arifleman_rpk : rhsgref_cdf_reg_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_cdf_reg_machinegunner : rhsgref_cdf_reg_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -2667,6 +3071,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_cdf_b_reg_arifleman_rpk : rhsgref_cdf_reg_arifleman_rpk {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_cdf_b_reg_rifleman : rhsgref_cdf_reg_rifleman {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -2804,6 +3212,10 @@ class CfgVehicles {
 	};
 
 	class rhsgref_cdf_un_grenadier : rhsgref_cdf_reg_grenadier {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_cdf_un_arifleman_rpk : rhsgref_cdf_reg_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -3087,6 +3499,10 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_ins_arifleman_rpk : rhsgref_ins_uniform_izlom {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_ins_machinegunner : rhsgref_ins_reed {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
@@ -3132,6 +3548,10 @@ class CfgVehicles {
 	};
 
 	class rhsgref_ins_pilot : rhsgref_ins_uniform_specter {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_ins_g_arifleman_rpk : rhsgref_ins_arifleman_rpk {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -3327,11 +3747,23 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_tla_rifleman_m14 : rhsgref_tla_para2 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_tla_rifleman_l1a1 : rhsgref_tla_para2 {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_tla_marksman_m14 : rhsgref_tla_para2 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_tla_squadleader : rhsgref_tla_para1 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_warlord : rhsgref_tla_para1 {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
@@ -3359,11 +3791,103 @@ class CfgVehicles {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_tla_saboteur : rhsgref_tla_para2 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_tla_medic : rhsgref_tla_para1 {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
+	class rhsgref_tla_mechanic : rhsgref_tla_para1 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
 	class rhsgref_tla_crew : rhsgref_tla_para2 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman : rhsgref_tla_rifleman {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_akms : rhsgref_tla_rifleman_akms {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_M16 : rhsgref_tla_rifleman_M16 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_pm63 : rhsgref_tla_rifleman_pm63 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_vz58 : rhsgref_tla_rifleman_vz58 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_m1 : rhsgref_tla_rifleman_m1 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_m14 : rhsgref_tla_rifleman_m14 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_l1a1 : rhsgref_tla_rifleman_l1a1 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_marksman_m14 : rhsgref_tla_marksman_m14 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_squadleader : rhsgref_tla_squadleader {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_warlord : rhsgref_tla_warlord {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_grenadier : rhsgref_tla_grenadier {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_grenadier_m79 : rhsgref_tla_grenadier_m79 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_machinegunner : rhsgref_tla_machinegunner {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_machinegunner_mg42 : rhsgref_tla_machinegunner_mg42 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_rifleman_rpg75 : rhsgref_tla_rifleman_rpg75 {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_specialist_at : rhsgref_tla_specialist_at {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_saboteur : rhsgref_tla_saboteur {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_mechanic : rhsgref_tla_mechanic {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_medic : rhsgref_tla_medic {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class rhsgref_tla_g_crew : rhsgref_tla_crew {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
