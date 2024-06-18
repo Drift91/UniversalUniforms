@@ -19,7 +19,7 @@ class CfgPatches {
 	class universal_uniforms {
 		units[]= {};
 		weapons[]= {};
-		requiredVersion = 2.02;
+		requiredVersion = 2.16;
 		requiredAddons[]= { 
 			"A3_Characters_F",
 			"A3_Characters_F_Common",
@@ -2640,6 +2640,102 @@ class CfgVehicles {
 	};
 
 	class CivilianPresence_C_man_polo_6_F_euro : C_man_polo_6_F_euro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_1_F_asia : C_Man_casual_1_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_2_F_asia : C_Man_casual_2_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_3_F_asia : C_Man_casual_3_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_4_F_asia : C_Man_casual_4_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_5_F_asia : C_Man_casual_5_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_6_F_asia : C_Man_casual_6_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_1_F_asia : C_man_polo_1_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_2_F_asia : C_man_polo_2_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_3_F_asia : C_man_polo_3_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_4_F_asia : C_man_polo_4_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_5_F_asia : C_man_polo_5_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_6_F_asia : C_man_polo_6_F_asia {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_1_F_afro : C_Man_casual_1_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_2_F_afro : C_Man_casual_2_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_3_F_afro : C_Man_casual_3_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_4_F_afro : C_Man_casual_4_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_5_F_afro : C_Man_casual_5_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_Man_casual_6_F_afro : C_Man_casual_6_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_1_F_afro : C_man_polo_1_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_2_F_afro : C_man_polo_2_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_3_F_afro : C_man_polo_3_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_4_F_afro : C_man_polo_4_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_5_F_afro : C_man_polo_5_F_afro {
+		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
+	};
+
+	class CivilianPresence_C_man_polo_6_F_afro : C_man_polo_6_F_afro {
 		modelSides[]= { 0, 1, 2, 3, 4, 5, 6, 7 };
 	};
 
